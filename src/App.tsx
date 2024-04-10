@@ -1,10 +1,8 @@
 import React, {useState} from 'react';
-import {Header, ItemHeader, TextHeader, OptionsProductsApple, ItemOptionProductApple} from './AppStyled';
+import {Header, ItemHeader, TextHeader, OptionsProductsApple, ItemOptionProductApple, TextOptionProductApple, SpamNewOptionProductApple} from './AppStyled';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faApple } from '@fortawesome/free-brands-svg-icons';
-import { faMagnifyingGlass, faBagShopping } from '@fortawesome/free-solid-svg-icons';
-
-import mac from './src/assets/images/mac.svg' 
+import { faAffiliatetheme, faApple, faAppStore} from '@fortawesome/free-brands-svg-icons';
+import { faMagnifyingGlass, faBagShopping, faComputer,faMobilePhone, faCableCar, faAnchor, faAppleWhole } from '@fortawesome/free-solid-svg-icons';
 
 function App() { 
 
@@ -66,7 +64,40 @@ function App() {
 
       <OptionsProductsApple>
         <ItemOptionProductApple>
-          <img src={mac}/>
+        <FontAwesomeIcon style={{color: 'black', fontSize: '40px'}} icon={faComputer} />
+        <TextOptionProductApple>Computador</TextOptionProductApple>
+        <SpamNewOptionProductApple>Novo</SpamNewOptionProductApple>
+        </ItemOptionProductApple>
+
+        <ItemOptionProductApple>
+        <FontAwesomeIcon style={{color: 'black',fontSize: '40px'}} icon={faMobilePhone} />
+        <TextOptionProductApple>Celular</TextOptionProductApple>
+        </ItemOptionProductApple>
+
+        <ItemOptionProductApple>
+        <FontAwesomeIcon style={{color: 'black',fontSize: '45px'}} icon={faCableCar} />
+        <TextOptionProductApple>Cabos</TextOptionProductApple>
+        </ItemOptionProductApple>
+
+        <ItemOptionProductApple>
+        <FontAwesomeIcon style={{color: 'black',fontSize: '45px' }} icon={faAffiliatetheme} />
+        <TextOptionProductApple>Trocas</TextOptionProductApple>
+        <SpamNewOptionProductApple>Novo</SpamNewOptionProductApple>
+        </ItemOptionProductApple>
+
+        <ItemOptionProductApple>
+        <FontAwesomeIcon style={{color: 'black',fontSize: '45px'}} icon={faAppStore} />
+        <TextOptionProductApple>AppStore</TextOptionProductApple>
+        </ItemOptionProductApple>
+
+        <ItemOptionProductApple>
+        <FontAwesomeIcon style={{color: 'black',fontSize: '45px' }} icon={faAnchor} />
+        <TextOptionProductApple>Ancore</TextOptionProductApple>
+        </ItemOptionProductApple>
+
+        <ItemOptionProductApple>
+        <FontAwesomeIcon style={{color: 'black',fontSize: '45px' }} icon={faAppleWhole} />
+        <TextOptionProductApple>Make it</TextOptionProductApple>
         </ItemOptionProductApple>
       </OptionsProductsApple>
 

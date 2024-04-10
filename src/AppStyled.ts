@@ -30,8 +30,7 @@ export const TextHeader = styled.div`
     opacity: .8;
     cursor: pointer;
     letter-spacing: -.01em;
-
-`;
+;`
 
 export const OptionsProductsApple = styled.div`
     display: flex;
@@ -39,11 +38,30 @@ export const OptionsProductsApple = styled.div`
     justify-content: center;
     align-items: center;
     height: 130px;
-    background-color: red;
+    background-color: white;
+    gap: 45px;
 ;`
 
 export const ItemOptionProductApple = styled.div`
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+;`
+
+export const TextOptionProductApple = styled.a`
+    color: rgba(0,0,0,0.8);
+    font-family: 'Courier New';
+    font-size: 12px;
+;`
+
+export const SpamNewOptionProductApple = styled.span`
+    font-family: 'arial';
+    color: Orange;
+    font-size: 10px;
+    font-weight: 400px;
+    position: absolute;
+    margin-top: 70px;
+
 ;`
