@@ -1,8 +1,17 @@
 import React, {useState} from 'react';
-import {Header, ItemHeader, TextHeader, OptionsProductsApple, ItemOptionProductApple, TextOptionProductApple, SpamNewOptionProductApple} from './AppStyled';
+import {Header, 
+        ItemHeader, 
+        TextHeader, 
+        OptionsProductsApple, 
+        ItemOptionProductApple, 
+        TextOptionProductApple, 
+        SpamNewOptionProductApple,} from './AppStyled';
+
+import {AppleEducationBlock} from './App2';
+        
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAffiliatetheme, faApple, faAppStore} from '@fortawesome/free-brands-svg-icons';
-import { faMagnifyingGlass, faBagShopping, faComputer,faMobilePhone, faCableCar, faAnchor, faAppleWhole } from '@fortawesome/free-solid-svg-icons';
+import { faMagnifyingGlass, faBagShopping, faComputer,faMobilePhone, faCableCar, faAnchor, faAppleWhole,  faChevronRight, faC } from '@fortawesome/free-solid-svg-icons';
 
 function App() { 
 
@@ -10,7 +19,7 @@ function App() {
 
   return (
 
-      <>
+      <div>
       <Header>
         <ItemHeader>
           <FontAwesomeIcon style={{color: '#f5f5f7', fontSize: '18px', opacity: '.8', cursor: 'pointer' }} icon={faApple} />
@@ -101,7 +110,10 @@ function App() {
         </ItemOptionProductApple>
       </OptionsProductsApple>
 
-      </>
+      <AppleEducationBlock><p>Economize na compra do MacBook Air e do MacBookPro de 13 polegadas na Apple Store Educacional*. <a href="https://apple.com.br">Comprar <FontAwesomeIcon style={{fontSize: 9}} icon={faChevronRight} /> </a> </p></AppleEducationBlock>
+      </div>
+
+
     );
 
 }
