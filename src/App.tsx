@@ -7,13 +7,13 @@ import {Header,
         TextOptionProductApple, 
         SpamNewOptionProductApple,} from './AppStyled';
 
-import {AppleEducationBlock} from './App2';
-        
+import {AppleEducationBlock, BannerArea} from './App2';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAffiliatetheme, faApple, faAppStore} from '@fortawesome/free-brands-svg-icons';
 import { faMagnifyingGlass, faBagShopping, faComputer,faMobilePhone, faCableCar, faAnchor, faAppleWhole,  faChevronRight, faC } from '@fortawesome/free-solid-svg-icons';
 
 function App() { 
+  const imageURL = 'https://cdn.iconscout.com/icon/free/png-256/free-apple-595-434158.png';
 
 
 
@@ -75,7 +75,7 @@ function App() {
         <ItemOptionProductApple>
         <FontAwesomeIcon style={{color: 'black', fontSize: '40px'}} icon={faComputer} />
         <TextOptionProductApple>Computador</TextOptionProductApple>
-        <SpamNewOptionProductApple>Novo</SpamNewOptionProductApple>
+        <SpamNewOptionProductApple type="span-new-option">Novo</SpamNewOptionProductApple>
         </ItemOptionProductApple>
 
         <ItemOptionProductApple>
@@ -91,7 +91,7 @@ function App() {
         <ItemOptionProductApple>
         <FontAwesomeIcon style={{color: 'black',fontSize: '45px' }} icon={faAffiliatetheme} />
         <TextOptionProductApple>Trocas</TextOptionProductApple>
-        <SpamNewOptionProductApple>Novo</SpamNewOptionProductApple>
+        <SpamNewOptionProductApple type="span-new-option">Novo</SpamNewOptionProductApple>
         </ItemOptionProductApple>
 
         <ItemOptionProductApple>
@@ -110,7 +110,19 @@ function App() {
         </ItemOptionProductApple>
       </OptionsProductsApple>
 
-      <AppleEducationBlock><p>Economize na compra do MacBook Air e do MacBookPro de 13 polegadas na Apple Store Educacional*. <a href="https://apple.com.br">Comprar <FontAwesomeIcon style={{fontSize: 9}} icon={faChevronRight} /> </a> </p></AppleEducationBlock>
+      <AppleEducationBlock>
+        
+        <p>Economize na compra do MacBook Air e do MacBookPro de 13 polegadas na Apple Store Educacional*. <a href="https://apple.com.br">Comprar <FontAwesomeIcon style={{fontSize: 9}} icon={faChevronRight} /> </a> </p>
+      </AppleEducationBlock>
+      <BannerArea>
+        <SpamNewOptionProductApple>Novo</SpamNewOptionProductApple>
+        <h1>MacBook Air</h1>
+        <h2>Livre, leve e voa.</h2>
+        <p>A partir de R$ 13.999</p>
+
+      </BannerArea>
+        
+      <img src={imageURL} alt="Descrição da imagem"/>
       </div>
 
 

@@ -28,3 +28,36 @@ export const AppleEducationBlock = styled.div`
         }
     }
 `; 
+
+
+export const BannerArea = styled.div`
+    height: 700px;
+    display flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 0;
+    text-align: center;
+
+    h1 {
+       Font-Size: 56px;
+       Color: #1d1d1f;
+       font-family: 'Bold';
+       font-Weight: Bold;
+    }
+
+    h2 {
+        Font-Size: 28px;
+        Color: #1d1d1f;
+        font-family: 'Bold';
+        font-Weight: Bold;     
+        margin-top: -40px;   
+
+    }
+
+    p{
+        Font-Size: 17px;
+        Color: #1d1d1f;
+        font-family: 'Light';
+        font-weight: 600;
+    }
+`;

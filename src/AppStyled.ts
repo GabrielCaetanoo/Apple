@@ -1,5 +1,10 @@
 import styled from "styled-components";
 
+interface SpamNewOptionProductAppleProps {
+    type?: string;
+
+}
+
 export const Header = styled.div`
     height: 48px;
     max-height: 44px;
@@ -56,12 +61,12 @@ export const TextOptionProductApple = styled.a`
     font-size: 12px;
 ;`
 
-export const SpamNewOptionProductApple = styled.span`
-    font-family: 'arial';
-    color: Orange;
-    font-size: 10px;
-    font-weight: 400px;
-    position: absolute;
-    margin-top: 70px;
-
-;`
+export const SpamNewOptionProductApple = styled.span<SpamNewOptionProductAppleProps>`
+    font-family: 'Arial';
+    color: orange;
+    font-size: ${(props) => props.type === 'span-new-option' ? '10px' : '15px'};
+    font-weight: ${(props) => props.type === 'span-new-option' ? '400' : 'bold'};
+    position: ${(props) => props.type === 'span-new-option' ? 'absolute' : 'relative'};
+    margin-top: ${(props) => props.type === 'span-new-option' ? '76px' : '0'};
+    margin-bottom: 0;
+`;
