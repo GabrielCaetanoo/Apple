@@ -1,5 +1,11 @@
 import styled from "styled-components";
 
+interface PurschaseButtonType {
+    background: string;
+    color: string;
+    underline?: boolean;
+}
+
 
 export const AppleEducationBlock = styled.div`
     height: 38px;
@@ -61,3 +67,38 @@ export const BannerArea = styled.div`
         font-weight: 600;
     }
 `;
+
+export const PurschaseButton = styled.button<PurschaseButtonType>`
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    white-space: nowrap;
+    font-size: 17px;
+    line-height: 1.17648;
+    font-height: 400;
+    color: ${(props) => props.color};
+    background: ${(props) => props.background};
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 980px;
+    border: none;
+    font-family: 'Regular';
+
+    &:hover {
+        text-decoration: ${(props) => props.underline ? 'underline' : 'none'};
+    }
+
+
+;`
+
+export const BannerAreaButtons = styled.div`
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   gap: 10px;
+
+
+;`

@@ -7,13 +7,13 @@ import {Header,
         TextOptionProductApple, 
         SpamNewOptionProductApple,} from './AppStyled';
 
-import {AppleEducationBlock, BannerArea} from './App2';
+import {AppleEducationBlock, BannerArea, PurschaseButton,BannerAreaButtons} from './App2';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAffiliatetheme, faApple, faAppStore} from '@fortawesome/free-brands-svg-icons';
 import { faMagnifyingGlass, faBagShopping, faComputer,faMobilePhone, faCableCar, faAnchor, faAppleWhole,  faChevronRight, faC } from '@fortawesome/free-solid-svg-icons';
 
 function App() { 
-  const imageURL = 'https://cdn.iconscout.com/icon/free/png-256/free-apple-595-434158.png';
+  const imageURL = 'https://www.apple.com/v/macbook-air/s/images/meta/macbook_air_mx__ez5y0k5yy7au_og.png';
 
 
 
@@ -114,16 +114,24 @@ function App() {
         
         <p>Economize na compra do MacBook Air e do MacBookPro de 13 polegadas na Apple Store Educacional*. <a href="https://apple.com.br">Comprar <FontAwesomeIcon style={{fontSize: 9}} icon={faChevronRight} /> </a> </p>
       </AppleEducationBlock>
-      <BannerArea>
-        <SpamNewOptionProductApple>Novo</SpamNewOptionProductApple>
-        <h1>MacBook Air</h1>
-        <h2>Livre, leve e voa.</h2>
-        <p>A partir de R$ 13.999</p>
 
-      </BannerArea>
-        
-      <img src={imageURL} alt="Descrição da imagem"/>
-      </div>
+      <div style={{ display: 'flex', justifyContent: 'center' }}>
+      <img src={imageURL} alt="Descrição da imagem" style={{ width: '1000px' }} />
+  </div>
+
+  <BannerArea>
+    <SpamNewOptionProductApple>Novo</SpamNewOptionProductApple>
+    <h1>MacBook Air</h1>
+    <h2>Livre, leve e voa.</h2>
+    <p>A partir de R$ 13.999</p>
+
+    <BannerAreaButtons style={{ marginBottom: '10px' }}>
+      <PurschaseButton background="#0071e3" color="white">Comprar</PurschaseButton>
+      <PurschaseButton background="transparent" underline={true} color="#0071e3">Saiba mais <FontAwesomeIcon style={{ fontSize: 11, marginLeft: 5 }} icon={faChevronRight} /></PurschaseButton>
+    </BannerAreaButtons>
+  </BannerArea>
+</div>
+
 
 
     );
