@@ -37,7 +37,7 @@ export const AppleEducationBlock = styled.div`
 
 
 export const BannerArea = styled.div`
-    height: 700px;
+    height: 690px;
     display flex;
     flex-direction: column;
     align-items: center;
@@ -49,6 +49,7 @@ export const BannerArea = styled.div`
        Color: #1d1d1f;
        font-family: 'Bold';
        font-Weight: Bold;
+       margin-top: 2px;
     }
 
     h2 {

@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 interface SpamNewOptionProductAppleProps {
+    marginTop?: string;
     type?: string;
 
 }
@@ -42,7 +43,7 @@ export const OptionsProductsApple = styled.div`
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: 130px;
+    height: 120px;
     background-color: white;
     gap: 45px;
 ;`
@@ -67,6 +68,42 @@ export const SpamNewOptionProductApple = styled.span<SpamNewOptionProductApplePr
     font-size: ${(props) => props.type === 'span-new-option' ? '10px' : '15px'};
     font-weight: ${(props) => props.type === 'span-new-option' ? '400' : 'bold'};
     position: ${(props) => props.type === 'span-new-option' ? 'absolute' : 'relative'};
-    margin-top: ${(props) => props.type === 'span-new-option' ? '76px' : '0'};
+    margin-top: ${(props) => props.marginTop};
     margin-bottom: 0;
 `;
+
+export const BannerMacPro = styled.div`
+    height: 608px;
+    background-color: black;
+    display flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 54px 0;
+    text-align: center;
+
+    h1 {
+       Font-Size: 56px;
+       Color: white;
+       font-family: 'Bold';
+       font-Weight: Bold;
+       margin-top: 2px;
+    }
+
+    h2 {
+        Font-Size: 28px;
+        Color: white;
+        font-family: 'Bold';
+        font-Weight: Bold;     
+        margin-top: -40px;   
+
+    }
+
+    p{
+        Font-Size: 17px;
+        Color: white;
+        font-family: 'Light';
+        font-weight: 600;
+    }
+
+
+;`

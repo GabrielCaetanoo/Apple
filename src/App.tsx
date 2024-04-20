@@ -5,21 +5,22 @@ import {Header,
         OptionsProductsApple, 
         ItemOptionProductApple, 
         TextOptionProductApple, 
-        SpamNewOptionProductApple,} from './AppStyled';
+        SpamNewOptionProductApple, BannerMacPro} from './AppStyled';
 
-import {AppleEducationBlock, BannerArea, PurschaseButton,BannerAreaButtons} from './App2';
+import {AppleEducationBlock, BannerArea, PurschaseButton,BannerAreaButtons, } from './App2';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAffiliatetheme, faApple, faAppStore} from '@fortawesome/free-brands-svg-icons';
 import { faMagnifyingGlass, faBagShopping, faComputer,faMobilePhone, faCableCar, faAnchor, faAppleWhole,  faChevronRight, faC } from '@fortawesome/free-solid-svg-icons';
 
 function App() { 
-  const imageURL = 'https://www.apple.com/v/macbook-air/s/images/meta/macbook_air_mx__ez5y0k5yy7au_og.png';
+  const imageURL = 'https://www.apple.com/v/macbook-air/s/images/overview/hero/hero_static__c9sislzzicq6_large.jpg';
+  const ImageURL2 = 'https://www.mastertronic.com.br/media/interface/images/mnej3-4.jpg';
 
 
 
   return (
 
-      <div>
+      <>
       <Header>
         <ItemHeader>
           <FontAwesomeIcon style={{color: '#f5f5f7', fontSize: '18px', opacity: '.8', cursor: 'pointer' }} icon={faApple} />
@@ -75,7 +76,7 @@ function App() {
         <ItemOptionProductApple>
         <FontAwesomeIcon style={{color: 'black', fontSize: '40px'}} icon={faComputer} />
         <TextOptionProductApple>Computador</TextOptionProductApple>
-        <SpamNewOptionProductApple type="span-new-option">Novo</SpamNewOptionProductApple>
+        <SpamNewOptionProductApple marginTop="76px" type="span-new-option">Novo</SpamNewOptionProductApple>
         </ItemOptionProductApple>
 
         <ItemOptionProductApple>
@@ -91,7 +92,7 @@ function App() {
         <ItemOptionProductApple>
         <FontAwesomeIcon style={{color: 'black',fontSize: '45px' }} icon={faAffiliatetheme} />
         <TextOptionProductApple>Trocas</TextOptionProductApple>
-        <SpamNewOptionProductApple type="span-new-option">Novo</SpamNewOptionProductApple>
+        <SpamNewOptionProductApple marginTop="76px" type="span-new-option">Novo</SpamNewOptionProductApple>
         </ItemOptionProductApple>
 
         <ItemOptionProductApple>
@@ -115,22 +116,45 @@ function App() {
         <p>Economize na compra do MacBook Air e do MacBookPro de 13 polegadas na Apple Store Educacional*. <a href="https://apple.com.br">Comprar <FontAwesomeIcon style={{fontSize: 9}} icon={faChevronRight} /> </a> </p>
       </AppleEducationBlock>
 
-      <div style={{ display: 'flex', justifyContent: 'center' }}>
-      <img src={imageURL} alt="Descrição da imagem" style={{ width: '1000px' }} />
-  </div>
-
   <BannerArea>
     <SpamNewOptionProductApple>Novo</SpamNewOptionProductApple>
     <h1>MacBook Air</h1>
     <h2>Livre, leve e voa.</h2>
     <p>A partir de R$ 13.999</p>
 
+
+
     <BannerAreaButtons style={{ marginBottom: '10px' }}>
       <PurschaseButton background="#0071e3" color="white">Comprar</PurschaseButton>
       <PurschaseButton background="transparent" underline={true} color="#0071e3">Saiba mais <FontAwesomeIcon style={{ fontSize: 11, marginLeft: 5 }} icon={faChevronRight} /></PurschaseButton>
     </BannerAreaButtons>
+    {/* Primeira imagem */}
+    <div style={{ display: 'flex', justifyContent: 'center' }}>
+      <img src={imageURL} alt="Descrição da imagem" style={{ width: '1000px' }} />
+  </div>
   </BannerArea>
-</div>
+
+  <BannerMacPro>
+  <SpamNewOptionProductApple marginTop='45px'>Novo</SpamNewOptionProductApple>
+    <h1>MacBook Pro de 13 pol.</h1>
+    <h2>Pro em qualquer lugar.</h2>
+    <p>A partir de R$ 15.299</p>
+
+    <BannerAreaButtons style={{ marginBottom: '10px' }}>
+      <PurschaseButton background="#0071e3" color="white">Comprar</PurschaseButton>
+      <PurschaseButton background="transparent" underline={true} color="#0071e3">Saiba mais <FontAwesomeIcon style={{ fontSize: 11, marginLeft: 5 }} icon={faChevronRight} /></PurschaseButton>
+    </BannerAreaButtons>
+
+    <div style={{ display: 'flex', justifyContent: 'center', marginTop: '20px' }}>
+      {/* Segunda imagem */}
+      <img src={ImageURL2} alt="Descrição da segunda imagem" style={{ width: '1000px' }} />
+    </div>
+
+  </BannerMacPro>
+ 
+</>
+
+
 
 
 
