@@ -6,6 +6,9 @@ interface PurschaseButtonType {
     underline?: boolean;
 }
 
+interface OptionMacType {
+    selected: boolean;
+}
 
 export const AppleEducationBlock = styled.div`
     height: 38px;
@@ -38,7 +41,7 @@ export const AppleEducationBlock = styled.div`
 
 export const BannerArea = styled.div`
     height: 690px;
-    display flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
     padding: 60px 0;
@@ -102,4 +105,51 @@ export const BannerAreaButtons = styled.div`
    gap: 10px;
 
 
+;`
+
+export const SelectMac = styled.div`
+    height: 800px;
+    display: flex; /* Correção: display: flex em vez de display flex */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Adicionado para centralizar horizontalmente */
+    padding: 100px 30px;
+    text-align: center;
+
+
+    h1 {
+        Font-Size: 40px;
+        Color: black;
+        font-family: 'Bold';
+        font-Weight: Bold;
+        margin-top: 2px;
+        
+    }
+`;
+
+export const OptionsMac = styled.div`
+    height: 40px;
+    width: 250px;
+    border-bottom: 1px solid #d2d2d7;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    cursor: pointer;
+    padding: 0px;
+    margin: 0px;
+;`
+
+export const OptionMac = styled.div<OptionMacType>`
+    color: ${(props) => (props.selected ? '#1d1d1F' : '#6e6e73')};
+    font-family: 'Regular';
+    font-size: 17px;
+    width: 95px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: ${(props) => (props.selected ? '2px solid #1d1d1F' : '1px solid #d2d2d7')};
+    width: 100%; /* Garante que a linha se estenda completamente */
 ;`

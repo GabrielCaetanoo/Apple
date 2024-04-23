@@ -5,9 +5,9 @@ import {Header,
         OptionsProductsApple, 
         ItemOptionProductApple, 
         TextOptionProductApple, 
-        SpamNewOptionProductApple, BannerMacPro} from './AppStyled';
+        SpamNewOptionProductApple, BannerMacPro, } from './AppStyled';
 
-import {AppleEducationBlock, BannerArea, PurschaseButton,BannerAreaButtons, } from './App2';
+import {AppleEducationBlock, BannerArea, PurschaseButton,BannerAreaButtons, SelectMac, OptionsMac, OptionMac} from './App2';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAffiliatetheme, faApple, faAppStore} from '@fortawesome/free-brands-svg-icons';
 import { faMagnifyingGlass, faBagShopping, faComputer,faMobilePhone, faCableCar, faAnchor, faAppleWhole,  faChevronRight, faC } from '@fortawesome/free-solid-svg-icons';
@@ -16,7 +16,7 @@ function App() {
   const imageURL = 'https://www.apple.com/v/macbook-air/s/images/overview/hero/hero_static__c9sislzzicq6_large.jpg';
   const ImageURL2 = 'https://www.mastertronic.com.br/media/interface/images/mnej3-4.jpg';
 
-
+  const [optionMac, setOptionMac] = useState<boolean>(true); // Corrigindo a definição do estado
 
   return (
 
@@ -151,6 +151,32 @@ function App() {
     </div>
 
   </BannerMacPro>
+
+  <SelectMac>
+  <h1>Qual é o Mac Ideal para você?</h1>
+
+  <OptionsMac>
+      <OptionMac
+           onClick={() => {
+           setOptionMac(!optionMac);
+           }}
+           selected={optionMac}
+           style={{ width: "75px" }} // Usar uma abordagem de estilo inline para a largura
+>
+  Notebook
+      </OptionMac>
+
+      <OptionMac
+           onClick={() => {
+           setOptionMac(!optionMac);
+           }}
+           selected={!optionMac}
+           style={{ width: "60px", float: "right" }} // Definir o estilo para alinhar à direita
+>
+  Desktop
+     </OptionMac>
+  </OptionsMac>
+</SelectMac>
  
 </>
 
