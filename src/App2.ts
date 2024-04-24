@@ -10,6 +10,10 @@ interface OptionMacType {
     selected: boolean;
 }
 
+interface ColorOptionMacType {
+    background: string;
+ }
+
 export const AppleEducationBlock = styled.div`
     height: 38px;
     display: flex;
@@ -152,4 +156,61 @@ export const OptionMac = styled.div<OptionMacType>`
     align-items: center;
     border-bottom: ${(props) => (props.selected ? '2px solid #1d1d1F' : '1px solid #d2d2d7')};
     width: 100%; /* Garante que a linha se estenda completamente */
+;`
+
+export const OptionsMacc= styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+
+;`
+
+export const OptionMacc = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 70px;
+
+    h1 { 
+        font-size: 25px;
+        text-align: center;
+        margin-top: -1px;
+    }
+
+    h2 {
+        font-size: 15px;
+        color: #6e6e73;
+        text-align: center;
+        font-family: 'Regular';
+    }
+
+
+;`
+
+export const ColorOptionsMac = styled.div` 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    gap: 5px;
+    width: 200px;
+;`
+
+export const ColorOptionMac = styled.div<ColorOptionMacType>`
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: ${(props) => props.background};
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+
 ;`

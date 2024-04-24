@@ -3,6 +3,7 @@ import styled from "styled-components";
 interface SpamNewOptionProductAppleProps {
     marginTop?: string;
     type?: string;
+    fontSize?: string;
 
 }
 

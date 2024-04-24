@@ -7,7 +7,8 @@ import {Header,
         TextOptionProductApple, 
         SpamNewOptionProductApple, BannerMacPro, } from './AppStyled';
 
-import {AppleEducationBlock, BannerArea, PurschaseButton,BannerAreaButtons, SelectMac, OptionsMac, OptionMac} from './App2';
+
+import {AppleEducationBlock, BannerArea, PurschaseButton,BannerAreaButtons, SelectMac, OptionsMac, OptionMac, OptionMacc, OptionsMacc, ColorOptionsMac, ColorOptionMac} from './App2';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAffiliatetheme, faApple, faAppStore} from '@fortawesome/free-brands-svg-icons';
 import { faMagnifyingGlass, faBagShopping, faComputer,faMobilePhone, faCableCar, faAnchor, faAppleWhole,  faChevronRight, faC } from '@fortawesome/free-solid-svg-icons';
@@ -15,6 +16,7 @@ import { faMagnifyingGlass, faBagShopping, faComputer,faMobilePhone, faCableCar,
 function App() { 
   const imageURL = 'https://www.apple.com/v/macbook-air/s/images/overview/hero/hero_static__c9sislzzicq6_large.jpg';
   const ImageURL2 = 'https://www.mastertronic.com.br/media/interface/images/mnej3-4.jpg';
+  const MacImage = 'https://www.apple.com/v/mac/home/by/images/overview/select/product_tile_mba_13_15__fx2g3qlubdym_large.png'
 
   const [optionMac, setOptionMac] = useState<boolean>(true); // Corrigindo a definição do estado
 
@@ -176,6 +178,78 @@ function App() {
   Desktop
      </OptionMac>
   </OptionsMac>
+
+  <OptionsMacc>
+
+    
+    <OptionMacc>
+        <img src={MacImage} alt='tanto faz' style={{ width: '167px' }} />
+        <ColorOptionsMac>
+          <ColorOptionMac background="#565353"></ColorOptionMac>
+          <ColorOptionMac background="black"></ColorOptionMac>
+          <ColorOptionMac background="#d8d8d8"></ColorOptionMac>
+        </ColorOptionsMac>
+
+        <SpamNewOptionProductApple fontSize="11px" marginTop="21px"></SpamNewOptionProductApple>
+
+
+        <h1>MacBook Air.<br/><br/></h1>
+
+        <h2>A partir de R$ 11.599</h2>
+
+
+    </OptionMacc>
+
+    <OptionMacc>
+        <img src={MacImage} alt='tanto faz' style={{ width: '167px' }} />
+        <ColorOptionsMac>
+          <ColorOptionMac background="#565353"></ColorOptionMac>
+          <ColorOptionMac background="black"></ColorOptionMac>
+          <ColorOptionMac background="#d8d8d8"></ColorOptionMac>
+          <ColorOptionMac background="#9e5858"></ColorOptionMac>
+        </ColorOptionsMac>
+
+        <SpamNewOptionProductApple fontSize="11px" marginTop="10px">Novo</SpamNewOptionProductApple>
+
+        <h1>MacBook Air<br/> <br/></h1>
+
+        <h2>A partir de R$ 11.599</h2>
+
+    </OptionMacc>
+
+    <OptionMacc>
+        <img src={MacImage} alt='tanto faz' style={{ width: '167px' }} />
+        <ColorOptionsMac>
+          <ColorOptionMac background="black"></ColorOptionMac>
+          <ColorOptionMac background="#d8d8d8"></ColorOptionMac>
+        </ColorOptionsMac>
+
+        <SpamNewOptionProductApple fontSize="11px" marginTop="10px">Novo</SpamNewOptionProductApple>
+
+        <h1>MacBook Pro <br/> de 13 pol.</h1>
+
+        <h2>A partir de R$ 11.599</h2>
+
+    </OptionMacc>
+
+    <OptionMacc>
+        <img src={MacImage} alt='tanto faz' style={{ width: '167px' }} />
+        <ColorOptionsMac>
+          <ColorOptionMac background="#565353"></ColorOptionMac>
+          <ColorOptionMac background="#d8d8d8"></ColorOptionMac>
+        </ColorOptionsMac>
+
+        <SpamNewOptionProductApple fontSize="11px" marginTop="21px"></SpamNewOptionProductApple>
+
+
+        <h1>MacBook Pro <br/> de 14 e 16 pol.</h1>
+
+        <h2>A partir de R$ 11.599</h2>
+
+    </OptionMacc>
+
+
+  </OptionsMacc>
 </SelectMac>
  
 </>
