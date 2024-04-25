@@ -31,9 +31,9 @@ export const ItemHeader = styled.div`
 `;
 
 export const TextHeader = styled.div`
-    font-size: 12px;
+    font-size: 14px;
     color: #f5f5f7;
-    font-family: 'Arial';
+    font-family: 'Myriad Pro';
     opacity: .8;
     cursor: pointer;
     letter-spacing: -.01em;
@@ -59,14 +59,14 @@ export const ItemOptionProductApple = styled.div`
 
 export const TextOptionProductApple = styled.a`
     color: rgba(0,0,0,0.8);
-    font-family: 'Courier New';
-    font-size: 12px;
+    font-family: 'Myriad Pro';
+    font-size: 14px;
 ;`
 
 export const SpamNewOptionProductApple = styled.span<SpamNewOptionProductAppleProps>`
-    font-family: 'Arial';
+    font-family: 'Myriad Pro';
     color: orange;
-    font-size: ${(props) => props.type === 'span-new-option' ? '10px' : '15px'};
+    font-size: ${(props) => props.type === 'span-new-option' ? '13px' : '15px'};
     font-weight: ${(props) => props.type === 'span-new-option' ? '400' : 'bold'};
     position: ${(props) => props.type === 'span-new-option' ? 'absolute' : 'relative'};
     margin-top: ${(props) => props.marginTop};
@@ -85,7 +85,7 @@ export const BannerMacPro = styled.div`
     h1 {
        Font-Size: 56px;
        Color: white;
-       font-family: 'Bold';
+       font-family: 'Myriad Pro';
        font-Weight: Bold;
        margin-top: 2px;
     }
@@ -93,7 +93,7 @@ export const BannerMacPro = styled.div`
     h2 {
         Font-Size: 28px;
         Color: white;
-        font-family: 'Bold';
+        font-family: 'Myriad Pro';
         font-Weight: Bold;     
         margin-top: -40px;   
 
@@ -102,7 +102,7 @@ export const BannerMacPro = styled.div`
     p{
         Font-Size: 17px;
         Color: white;
-        font-family: 'Light';
+        font-family: 'Myriad Pro';
         font-weight: 600;
     }
 

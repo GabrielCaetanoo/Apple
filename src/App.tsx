@@ -8,7 +8,7 @@ import {Header,
         SpamNewOptionProductApple, BannerMacPro, } from './AppStyled';
 
 
-import {AppleEducationBlock, BannerArea, PurschaseButton,BannerAreaButtons, SelectMac, OptionsMac, OptionMac, OptionMacc, OptionsMacc, ColorOptionsMac, ColorOptionMac} from './App2';
+import {AppleEducationBlock, BannerArea, PurschaseButton,BannerAreaButtons, SelectMac, OptionsMac, OptionMac, OptionMacc, OptionsMacc, ColorOptionsMac, ColorOptionMac, } from './App2';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAffiliatetheme, faApple, faAppStore} from '@fortawesome/free-brands-svg-icons';
 import { faMagnifyingGlass, faBagShopping, faComputer,faMobilePhone, faCableCar, faAnchor, faAppleWhole,  faChevronRight, faC } from '@fortawesome/free-solid-svg-icons';
@@ -16,7 +16,9 @@ import { faMagnifyingGlass, faBagShopping, faComputer,faMobilePhone, faCableCar,
 function App() { 
   const imageURL = 'https://www.apple.com/v/macbook-air/s/images/overview/hero/hero_static__c9sislzzicq6_large.jpg';
   const ImageURL2 = 'https://www.mastertronic.com.br/media/interface/images/mnej3-4.jpg';
-  const MacImage = 'https://www.apple.com/v/mac/home/by/images/overview/select/product_tile_mba_13_15__fx2g3qlubdym_large.png'
+  const MacImage = 'https://www.apple.com/v/mac/home/by/images/overview/select/product_tile_mba_13_15__fx2g3qlubdym_large.png';
+  const MacPro = 'https://www.apple.com/v/mac/home/by/images/overview/select/product_tile_mbp_14_16__bkl8zusnkpw2_large.png';
+  const VideoMac = 'https://www.apple.com/105/media/us/mac/family/2024/60fc0159-4236-4a03-8534-f5ba07e538c5/anim/welcome/small.mp4#t=6.076846'
 
   const [optionMac, setOptionMac] = useState<boolean>(true); // Corrigindo a definição do estado
 
@@ -197,6 +199,13 @@ function App() {
 
         <h2>A partir de R$ 11.599</h2>
 
+    <BannerAreaButtons style={{ marginBottom: '10px' }}>
+       <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+       <PurschaseButton background="#0071e3" color="white">Comprar</PurschaseButton>
+       <PurschaseButton background="transparent" underline={true} color="#0071e3">Saiba mais <FontAwesomeIcon style={{ fontSize: 11, marginLeft: 5 }} icon={faChevronRight} /></PurschaseButton>
+       </div>
+    </BannerAreaButtons>
+
 
     </OptionMacc>
 
@@ -215,6 +224,14 @@ function App() {
 
         <h2>A partir de R$ 11.599</h2>
 
+    <BannerAreaButtons style={{ marginBottom: '10px' }}>
+       <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+       <PurschaseButton background="#0071e3" color="white">Comprar</PurschaseButton>
+       <PurschaseButton background="transparent" underline={true} color="#0071e3">Saiba mais <FontAwesomeIcon style={{ fontSize: 11, marginLeft: 5 }} icon={faChevronRight} /></PurschaseButton>
+       </div>
+    </BannerAreaButtons>
+
+
     </OptionMacc>
 
     <OptionMacc>
@@ -230,10 +247,20 @@ function App() {
 
         <h2>A partir de R$ 11.599</h2>
 
+    <BannerAreaButtons style={{ marginBottom: '10px' }}>
+       <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+       <PurschaseButton background="#0071e3" color="white">Comprar</PurschaseButton>
+       <PurschaseButton background="transparent" underline={true} color="#0071e3">Saiba mais <FontAwesomeIcon style={{ fontSize: 11, marginLeft: 5 }} icon={faChevronRight} /></PurschaseButton>
+       </div>
+    </BannerAreaButtons>
+       
+
+        
+
     </OptionMacc>
 
     <OptionMacc>
-        <img src={MacImage} alt='tanto faz' style={{ width: '167px' }} />
+        <img src={MacPro} alt='tanto faz' style={{ width: '167px' }} />
         <ColorOptionsMac>
           <ColorOptionMac background="#565353"></ColorOptionMac>
           <ColorOptionMac background="#d8d8d8"></ColorOptionMac>
@@ -246,12 +273,18 @@ function App() {
 
         <h2>A partir de R$ 11.599</h2>
 
+    <BannerAreaButtons style={{ marginBottom: '10px' }}>
+       <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+       <PurschaseButton background="#0071e3" color="white">Comprar</PurschaseButton>
+       <PurschaseButton background="transparent" underline={true} color="#0071e3">Saiba mais <FontAwesomeIcon style={{ fontSize: 11, marginLeft: 5 }} icon={faChevronRight} /></PurschaseButton>
+       </div>
+    </BannerAreaButtons>   
     </OptionMacc>
-
-
   </OptionsMacc>
 </SelectMac>
- 
+
+
+
 </>
 
 

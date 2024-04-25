@@ -26,8 +26,8 @@ export const AppleEducationBlock = styled.div`
     letter-spacing: -.016em;
 
     p {
-        Font-family: 'Arial';
-        font-size: 14px;
+        Font-family: 'Myriad Pro';
+        font-size: 16px;
         font-weight: 400;
     
         a {
@@ -54,7 +54,7 @@ export const BannerArea = styled.div`
     h1 {
        Font-Size: 56px;
        Color: #1d1d1f;
-       font-family: 'Bold';
+       font-family: 'Myriad Pro';
        font-Weight: Bold;
        margin-top: 2px;
     }
@@ -62,7 +62,7 @@ export const BannerArea = styled.div`
     h2 {
         Font-Size: 28px;
         Color: #1d1d1f;
-        font-family: 'Bold';
+        font-family: 'Myriad Pro';
         font-Weight: Bold;     
         margin-top: -40px;   
 
@@ -71,7 +71,7 @@ export const BannerArea = styled.div`
     p{
         Font-Size: 17px;
         Color: #1d1d1f;
-        font-family: 'Light';
+        font-family: 'Myriad Pro';
         font-weight: 600;
     }
 `;
@@ -92,7 +92,7 @@ export const PurschaseButton = styled.button<PurschaseButtonType>`
     padding-bottom: 8px;
     border-radius: 980px;
     border: none;
-    font-family: 'Regular';
+    font-family: 'Myriad Pro';
 
     &:hover {
         text-decoration: ${(props) => props.underline ? 'underline' : 'none'};
@@ -124,7 +124,7 @@ export const SelectMac = styled.div`
     h1 {
         Font-Size: 40px;
         Color: black;
-        font-family: 'Bold';
+        font-family: 'Myriad Pro';
         font-Weight: Bold;
         margin-top: 2px;
         
@@ -146,8 +146,8 @@ export const OptionsMac = styled.div`
 
 export const OptionMac = styled.div<OptionMacType>`
     color: ${(props) => (props.selected ? '#1d1d1F' : '#6e6e73')};
-    font-family: 'Regular';
-    font-size: 17px;
+    font-family: 'Myriad Pro';
+    font-size: 18px;
     width: 95px;
     height: 100%;
     display: flex;
@@ -185,7 +185,7 @@ export const OptionMacc = styled.div`
         font-size: 15px;
         color: #6e6e73;
         text-align: center;
-        font-family: 'Regular';
+        font-family: 'Myriad Pro';
     }
 
 
@@ -210,7 +210,4 @@ export const ColorOptionMac = styled.div<ColorOptionMacType>`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-
-
 ;`
